@@ -41,7 +41,7 @@ function agregarStringInvertida() {
   String.prototype.reverse=function(){
     var Stringinvertida="";
     for (var i=this.length - 1;i>=0;i--){
-      Stringinvertida=Stringinvertida + this.CharAt(i);
+      Stringinvertida=Stringinvertida + this.charAt(i);
     }
     return Stringinvertida;
   };
