@@ -25,10 +25,10 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  var sumatotal=numeros.reduce(function(acc,elemento){
-    return acc+elemento;
-  }0);
-  cb(sumatotal);
+  var sumaTotal = numeros.reduce(function(acc, curr) {
+    return acc + curr;
+  },0);
+  cb(sumaTotal);
 }
 
 function forEach(array, cb) {
@@ -46,10 +46,10 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var nuevoarray=array.map(function(elemento){
-    cb(elemento);
+  var nuevoArray = array.map(function(el) {
+    return cb(el);
   });
-  return nuevoarray;
+  return nuevoArray;
 }
 
 function filter(array) {
@@ -62,7 +62,7 @@ function filter(array) {
       nuevoarray.push(array[i])
     }
   } 
-  return nuevo array;
+  return nuevoarray;
 }
 
 // No modificar nada debajo de esta línea
